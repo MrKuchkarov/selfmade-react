@@ -1,6 +1,7 @@
 import { h } from 'snabbdom';
 
 const createElement = (type, props = {}, ...children) => {
+    console.log(type, props, children);
   // Превращаем массив children в плоский список
   // Это необходимо для корректного мапинга todos.map(todo => <p>{todo}</p>) работал в jsx
   // [['1'], ['2', '3']] -> ['1', '2', '3']
